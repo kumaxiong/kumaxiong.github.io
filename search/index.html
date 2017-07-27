@@ -17,7 +17,7 @@
         https://github.com/Halyul/hexo-theme-mdui
         Version: 1.4.6 -->
   <meta charset="UTF-8">
-  <title>归档 - xiong233的博客</title>
+  <title>搜索什么... - xiong233的博客</title>
 
   <!-- Favicons -->
   <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
@@ -56,7 +56,7 @@
   <!-- The Open Graph protocol -->
   <meta property="og:url" content="http://yoursite.com">
   <meta property="og:type" content="blog">
-  <meta property="og:title" content="归档 - xiong233的博客 | xiong233的博客">
+  <meta property="og:title" content="搜索什么... - xiong233的博客 | xiong233的博客">
   <meta property="og:image" content="/img/favicon.png" />
   
         <meta property="og:description" content="暂时没有描述">
@@ -119,27 +119,8 @@
 
   
 
-      <div class="mdui-appbar mdui-appbar-fixed animate-appbar mdui-shadow-0" id="blog-appbar">
-        <div class="mdui-toolbar mdui-color-theme mdui-shadow-2">
-          <button class="mdui-btn mdui-ripple mdui-btn-icon drawer-button" mdui-drawer="{target: '#drawer'}">
-            <i class="mdui-icon">
-              <span></span>
-            </i>
-          </button>
-          
-            <a href="/" class="mdui-typo-headline mdui-hidden-sm-down">
-              Title
-            </a>
-            <span class="appbar-border-line mdui-hidden-sm-down"></span>
-          
-          <span class="mdui-typo-title">Kuma Xiong</span>
-          <div class="mdui-toolbar-spacer"></div>
-          
-          
 
-        </div>
-      </div>
-
+  <div id="search-cover" searchResult onclick="closeSearch()"></div>
 
 
 
@@ -182,16 +163,38 @@
       </div>
     
     
-      <div class="mdui-list no-padding-top">
-        <li class="mdui-list-item mdui-ripple mdui-list-item-active">
-          <i class="mdui-list-item-icon mdui-icon material-icons mdui-text-color-theme-accent">&#xe149;</i>
-          <div class="mdui-list-item-content mdui-text-color-theme-accent">
-            归档
-            <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
-          </div>
-        </li>
+      <div class="mdui-list no-padding">
+        <a href="/archives">
+          <li class="mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe149;</i>
+            <div class="mdui-list-item-content">
+              归档
+              <span class="badge new mdui-color-theme-accent" data-badge-caption="">2</span>
+            </div>
+          </li>
+        </a>
       </div>
     
+    
+      <div class="mdui-list no-padding-top" mdui-collapse="{accordion: true}" mdui-collapse>
+        
+        
+        <div class="mdui-collapse-item ">
+          <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+            <i class="mdui-list-item-icon mdui-icon material-icons">&#xe916;</i>
+            <div class="mdui-list-item-content">年份</div>
+            <i class="mdui-collapse-item-arrow mdui-icon material-icons">&#xe5c5;</i>
+          </div>
+          <div class="mdui-collapse-item-body mdui-list">
+            
+            
+              <a href="/archives/2017/" class="mdui-list-item mdui-ripple">
+                2017
+              </a>
+            
+          </div>
+        </div>
+      </div>
     
   </div>
   
@@ -230,79 +233,23 @@
 
 
 <main>
-  
-  
-<style id="archives_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("archives_css","/css/src/shared/archives.min.css?P0dAOiv90Y3EOEbIb09QUw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
-<div id="archives" class="animate-post">
-  <div class="header">
-    <div class="bg">
-      <img class="mdui-img-fluid mdui-img-rounded" src="/img/bg.png"/>
-    </div>
-    <div class="content" style="
-      background-color:
-      
-        #eeeeee
-      
-    ">
-      <img class="mdui-img-circle avatar" src="/img/avatar.png"/>
-      <div class="info">
-        <div class="name">
-          Kuma Xiong
-        </div>
-        <div class="slogan">
-          I&#39;m your slogan!
-        </div>
-      </div>
-      <div class="flex-spacer mdui-hidden-sm-down"></div>
-      
-      
-    </div>
+  <style id="search_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("search_css","/css/src/plus/search.min.css?PsMrsW7mtwLjgUsSFl0MAw==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+<style id="index_css"></style><script>if(typeof window.lsLoadCSSMaxNums === "undefined")window.lsLoadCSSMaxNums = 0;window.lsLoadCSSMaxNums++;lsloader.load("index_css","/css/src/plus/index.min.css?WYKJSRDQmvHqC3U1Wgs23g==",function(){if(typeof window.lsLoadCSSNums === "undefined")window.lsLoadCSSNums = 0;window.lsLoadCSSNums++;if(window.lsLoadCSSNums == window.lsLoadCSSMaxNums)document.documentElement.style.display="";}, false)</script>
+<div id="search">
+  <div class="posts-container column-3">
+
   </div>
-  <div class="items mdui-container-fluid">
-    <div class="title mdui-text-color-theme-secondary">
-      分类
-    </div>
-    <div class="container mdui-row">
-      
-    </div>
+
+  <div id="content-list" searchResult>
+
   </div>
-  <div class="items mdui-container-fluid">
-    <div class="title mdui-text-color-theme-secondary">
-      标签
-    </div>
-    <div class="container mdui-row">
-      
-    </div>
-  </div>
-  <div class="items mdui-container-fluid">
-    <div class="title mdui-text-color-theme-secondary">
-      年份
-    </div>
-    <div class="container mdui-row">
-      
-        
-        <div class="mdui-col-xs-6 mdui-col-md-3 item">
-          <a href="/archives/2017/" target="_self" class="no-text-decoration">
-            <div class="mdui-card card-bottom-fix mdui-color-amber">
-              <div class="mdui-card-media" style="background-image: url(/img/random/picHD_39.png)">
-              </div>
-              <div class="content no-length">
-                <img class="mdui-img-circle avatar" src="/img/avatar.png" />
-                <div class="category">2017</div>
-              </div>
-            </div>
-          </a>
-        </div>
-      
+
+  <div class="footer">
+    <div class="mdui-text-center mdui-text-color-theme-text">
+      看起来已经没有了
     </div>
   </div>
 </div>
-
-
-<button id="toTop" class="mdui-fab mdui-color-theme-accent mdui-ripple mdui-fab-fixed mdui-fab-hide" style="z-index: 9;" onclick="smoothScroll.animateScroll( 0 );">
-  <i class="mdui-icon material-icons">&#xe5d8;</i>
-</button>
-
 
 </main>
 
@@ -353,13 +300,6 @@
 
 
 
-  <script>
-    window.addEventListener("scroll", function(){
-       document.querySelector('#archives .bg .mdui-img-fluid.mdui-img-rounded')
-        .style.transform = 'translateY(' + document.body.scrollTop * 0.4 + 'px)';
-    })
-  </script>
-  
 
 
 
@@ -368,29 +308,6 @@
 
 
 
-
-
-
-  <script type="text/ls-javascript" id="to-top-script">
-  /* fab */
-  (function() {
-    var pageFlag = false;
-    var fab = new mdui.Fab('#toTop');
-    fab.hide();
-    window.addEventListener('scroll', function() {
-      var bodyTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
-      var divTop = document.querySelector('div#top').offsetTop
-      var pageLocation = divTop - bodyTop;
-      if (!pageFlag && pageLocation < 0) {
-        fab.show();
-        pageFlag = true;
-      } else if (pageFlag && pageLocation >= 0) {
-        fab.hide();
-        pageFlag = false;
-      }
-    });
-  })();
-</script>
 
 
 
